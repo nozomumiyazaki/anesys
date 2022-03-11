@@ -1,6 +1,5 @@
 streamlit==0.62.0
 pandas
 datetime
-matplotlib.pyplot
 dates
 matplotlib
