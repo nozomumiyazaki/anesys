@@ -77,6 +77,6 @@ try:
     st.pyplot(plt)
 
 except:
-    st.write('データがありません')
+    st.write('データがありません。')
     
 
