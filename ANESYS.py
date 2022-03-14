@@ -16,8 +16,8 @@ month = dt.datetime.today().strftime('%m')
 day = dt.datetime.today().strftime('%d')
 
 
-df = pd.read_csv('ANESYS/Data/' + year + '/' + month + '_' + day + '.csv', names = ['datetime', '温度', '湿度'])
-
+#df = pd.read_csv('ANESYS/Data/' + year + '/' + month + '_' + day + '.csv', names = ['datetime', '温度', '湿度'])
+df = pd.read_csv('Data/' + year + '/' + month + '_' + day + '.csv', names = ['datetime', '温度', '湿度'])
 name = 'ハウス1'
 
 df2 = df.tail(1)#末尾1
@@ -39,7 +39,8 @@ month = selected_day.strftime('%m')
 day = selected_day.strftime('%d')
 
 try:
-    g_df = pd.read_csv('ANESYS/Data/' + year + '/' + month + '_' + day + '.csv', names = ['datetime', '温度', '湿度', 'CO2', '日射量'])
+    #g_df = pd.read_csv('ANESYS/Data/' + year + '/' + month + '_' + day + '.csv', names = ['datetime', '温度', '湿度', 'CO2', '日射量'])
+    g_df = pd.read_csv('Data/' + year + '/' + month + '_' + day + '.csv', names = ['datetime', '温度', '湿度', 'CO2', '日射量'])
     g_df['datetime'] = pd.to_datetime(g_df['datetime'])
     
     #Graph_Font
